@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Thông tin người dùng </h1>
+    <div id="info"> 
+           
+    </div>
+    <script>
+  var students =JSON.parse(localStorage.getItem('lists'))[0] ;
+    var info = document.querySelector("#info");
+
+    if(info) {
+
+        info.innerHTML=`
+    
+        <table border="2 solid black">
+           <tbody>
+           <tr>
+                   <th> Họ và tên  </th>
+                    <td>  ${students.fullname}   </td>
+           </tr>
+           <tr>
+                   <th> Địa chỉ email   </th>
+                   <td>   ${students.email}  </td>
+           </tr>
+           <tr>
+                   <th> Thành phố    </th>
+                    <td>  ${students.city}    </td>
+           </tr>
+           <tr>
+                  <th> Địa chỉ   </th>
+                      <td>  ${students.address}   </td>
+           </tr>
+           <tr>
+                <th> Mật khẩu </th>
+               <td>  ${students.password}   </td>
+          </tr>
+          </tbody>
+        </table>
+        <p> Ảnh đại diện:</p>
+       <img src= ${students.images}  width="200" height="200">
+        `
+    }
+
+    </script>
+</body>
+</html>

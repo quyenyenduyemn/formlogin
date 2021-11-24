@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <title>Document edit</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="container-fluid mt-3 ">
+            <h4 class="mb-2 title">Form Login</h4>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <label for="myEmail">Email</label>
+                        <input type="email" class="form-control" id="myEmail" placeholder="Email">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="myPassword">Password</label>
+                        <input type="password" class="form-control" id="myPassword" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <label for="inputAddress">Fullname</label>
+                        <input type="text" class="form-control" id="myFullname" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="myCity">City</label>
+                        <input type="text" class="form-control" id="myCity" placeholder="Eg : Ha Noi">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">Address</label>
+                    <input type="text" class="form-control" id="myAddress" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="myCheck">
+                        <label class="form-check-label" for="myCheck">
+                            Check me out
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="profile-pic-div ">
+                        <img src="images/image.jpg" id="photo" class="mx-auto d-block" width="200" height="200">
+                        <input type="file" accept=".jpg, .png" id="file" multiple required>
+                        <label for="file" id="uploadBtn">Choose Avatar</label>
+                    </div>
+                </div>
+        </div>
+        <div id="wp-button">
+            <button type="submit" class="btn btn-primary margin-primary" onclick="newpost()">DONE</button>
+            <button type="submit" class="btn btn-danger margin-red">CANCEL</button>
+            <button>AAbc</button>
+        </div>
+        </form>
+    </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
